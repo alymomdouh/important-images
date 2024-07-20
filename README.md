@@ -1,2 +1,3 @@
 # important-images
-Important images for learn 
+Important images and pdf files for learn
+
