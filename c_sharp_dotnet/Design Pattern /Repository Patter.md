@@ -1,6 +1,8 @@
 Repository Pattern in C# 💡🖥️
 
-The Repository Pattern is one of the most commonly used patterns in enterprise applications. It provides a way to abstract data access logic, making your code cleaner, more modular, and easier to maintain. 🚀
+The Repository Pattern is one of the most commonly used patterns in enterprise applications. 
+
+It provides a way to abstract data access logic, making your code cleaner, more modular, and easier to maintain. 🚀
 
 Here’s why you should consider using it:
 
@@ -13,7 +15,9 @@ Here’s why you should consider using it:
 
 How does it work? ⚙️
 
-In C#, you typically define an interface for the repository and then create a class that implements the interface. The interface defines methods for common data operations like adding, updating, deleting, and retrieving entities.
+In C#, you typically define an interface for the repository and then create a class that implements the interface. 
+
+The interface defines methods for common data operations like adding, updating, deleting, and retrieving entities.
 
 Pros and Cons ⚖️
 
@@ -30,3 +34,7 @@ Cons ❌
 👎Can add an extra layer of abstraction.
 
 👎Requires discipline to avoid anemic repositories (too generic).
+
+
+![image](https://github.com/user-attachments/assets/aab50ddb-68ac-443f-8d8c-d0be5ebee91b)
+
