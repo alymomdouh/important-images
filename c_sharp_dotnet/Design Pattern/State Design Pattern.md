@@ -1,4 +1,5 @@
 
+
 ##  [Understanding the State Design Pattern P1](https://dev.to/moh_moh701/understanding-the-state-design-pattern-p1-52m5)
 
 ## Meta Description: 
@@ -263,3 +264,210 @@ https://lnkd.in/dxjWvJYb
 
 بالتالي، State Design Pattern بيكون مثالي للأنظمة اللي بتتعامل مع حالات متعددة، وبيسهل عملية التطوير والصيانة.
 </div>
+
+-------------------------------------------------------------------------
+
+###   [Understanding the State Design Pattern P2](https://dev.to/moh_moh701/understanding-the-state-design-pattern-p2-gp4)
+
+Here’s a detailed article on building a state machine in C# from scratch. 
+
+This example demonstrates managing a Phone Call State Machine with states like off-hook, connecting, connected, and on-hold.
+
+We’ll implement this without any external libraries to show how to create a state machine using enums, dictionaries, and simple transitions.
+
+### Introduction
+State machines are often constructed using libraries that manage transitions and state configurations. However, implementing a state machine without any external libraries gives you a solid understanding of its internal workings. This article covers building a basic state machine from scratch to model a phone call scenario.
+
+### Why Use a State Machine?
+State machines are a way to model systems where an object can be in multiple states and transition between them based on specific events or triggers. This approach is useful in:
+
+Finite state management.
+Controlling complex workflows.
+Ensuring organized and readable code.
+In our example, we’ll model the states and transitions of a phone call:
+
+## States: Define different statuses of the call (e.g., off-hook, connecting).
+## Triggers: Define events that cause the call to transition from one state to another (e.g., dial a number).
+Implementation of a Phone Call State Machine
+We’ll break down the implementation into these main steps:
+
+1.Define States and Triggers.
+
+2. Set Up Transitions in a Dictionary.
+
+3.Orchestrate the State Machine. 
+
+## Step 1: Define States and Triggers
+We’ll start by defining the states and triggers for our phone call state machine.
+
+## States: Represents the different stages of a call.
+## Triggers: Represents events that change the call’s state.
+
+```
+using System;
+using System.Collections.Generic;
+
+namespace StateMachineExample
+{
+    // Define the states of the phone call
+    public enum State
+    {
+        OffHook,
+        Connecting,
+        Connected,
+        OnHold
+    }
+
+    // Define the triggers that cause state transitions
+    public enum Trigger
+    {
+        CallDialed,
+        HungUp,
+        CallConnected,
+        PlacedOnHold,
+        TakenOffHold,
+        LeftMessage
+    }
+}
+```
+## Step 2: Define the Transition Rules
+We use a dictionary to manage possible transitions. For each state, this dictionary will store the valid triggers and their resulting states.
+```
+public class PhoneCallStateMachine
+{
+    private static Dictionary<State, List<(Trigger, State)>> _rules = new()
+    {
+        // OffHook state transitions
+        { State.OffHook, new List<(Trigger, State)>
+            {
+                (Trigger.CallDialed, State.Connecting)
+            }
+        },
+
+        // Connecting state transitions
+        { State.Connecting, new List<(Trigger, State)>
+            {
+                (Trigger.HungUp, State.OffHook),
+                (Trigger.CallConnected, State.Connected)
+            }
+        },
+
+        // Connected state transitions
+        { State.Connected, new List<(Trigger, State)>
+            {
+                (Trigger.LeftMessage, State.OffHook),
+                (Trigger.HungUp, State.OffHook),
+                (Trigger.PlacedOnHold, State.OnHold)
+            }
+        },
+
+        // OnHold state transitions
+        { State.OnHold, new List<(Trigger, State)>
+            {
+                (Trigger.TakenOffHold, State.Connected),
+                (Trigger.HungUp, State.OffHook)
+            }
+        }
+    };
+
+    public State CurrentState { get; private set; } = State.OffHook;
+
+    public void MoveToNextState(Trigger trigger)
+    {
+        foreach (var transition in _rules[CurrentState])
+        {
+            if (transition.Item1 == trigger)
+            {
+                CurrentState = transition.Item2;
+                return;
+            }
+        }
+
+        Console.WriteLine($"Trigger '{trigger}' is invalid from '{CurrentState}' state.");
+    }
+}
+```
+This dictionary setup allows:
+
+Defining valid state transitions for each state and trigger pair.
+
+Avoiding invalid transitions by only allowing those defined in _rules.
+
+## Step 3: Orchestrating the State Machine
+
+Now, let’s set up the main program to test our state machine. We will prompt the user to select a trigger for transitioning between states.
+```
+class Program
+{
+    static void Main(string[] args)
+    {
+        var phone = new PhoneCallStateMachine();
+
+        while (true)
+        {
+            Console.WriteLine($"The phone is currently: {phone.CurrentState}");
+            Console.WriteLine("Select a trigger:");
+
+            // Display possible triggers for the current state
+            var availableTransitions = PhoneCallStateMachine._rules[phone.CurrentState];
+            for (int i = 0; i < availableTransitions.Count; i++)
+            {
+                Console.WriteLine($"{i}. {availableTransitions[i].Item1}");
+            }
+
+            // Read user input for the trigger
+            if (int.TryParse(Console.ReadLine(), out int choice) &&
+                choice >= 0 && choice < availableTransitions.Count)
+            {
+                phone.MoveToNextState(availableTransitions[choice].Item1);
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice, please try again.");
+            }
+
+            Console.WriteLine();
+        }
+    }
+}
+```
+## Explanation of the Code
+-. User Interaction: The Main method displays the current state and available triggers based on the current state.
+-. Transition Execution: MoveToNextState uses the selected trigger to update the state. If the transition is invalid, it displays a message.
+-. Loop Continuation: This example keeps running, allowing you to navigate between states until manually stopped.
+Example Run
+When you run the code, you’ll see prompts allowing you to navigate through states as if handling a real phone call.
+
+## 1.Initial State:
+```
+   The phone is currently: OffHook
+   Select a trigger:
+   0. CallDialed
+```
+## 2.After Calling:
+```
+   The phone is currently: Connecting
+   Select a trigger:
+   0. HungUp
+   1. CallConnected
+```
+## 3.When Connected:
+```
+   The phone is currently: Connected
+   Select a trigger:
+   0. LeftMessage
+   1. HungUp
+   2. PlacedOnHold
+```
+By navigating through each option, the phone call state machine emulates different real-life scenarios like being connected, put on hold, or hanging up.
+
+### Benefits of Building a State Machine Manually
+Fine-grained Control: Directly manage how states and triggers interact, allowing customization beyond what typical libraries offer.
+Learn Fundamental Concepts: Understand how transitions work without relying on abstractions.
+Enhanced Flexibility: Easily add or modify states, transitions, or behaviors.
+## Conclusion
+Creating a state machine without external libraries in C# is simple yet powerful. This approach provides clear state and transition management, crucial in systems like phone calls, vending machines, and workflow management systems. While libraries can simplify state machine implementation, building one yourself enhances understanding and control over your code’s behavior.
+
+This example provides a solid foundation for building more complex state machines in C#.
+
+
