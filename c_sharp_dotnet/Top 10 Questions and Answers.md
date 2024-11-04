@@ -173,3 +173,128 @@ Understanding the differences between static classes and singleton patterns is c
 Static classes are ideal for stateless utility methods, while singletons are best for managing shared, stateful resources. 
 Properly applying these concepts can lead to more maintainable and robust software designs.
 
+---------------------
+###    [Top 10 Questions and Answers on Abstraction vs Encapsulation](https://dotnet-fullstack-dev.blogspot.com/2024/07/blog-post_23.html)
+
+
+Abstraction and encapsulation are two fundamental concepts in object-oriented programming (OOP). 
+
+Both are used to manage complexity but achieve this in different ways.
+
+Abstraction is about hiding the complexity of the system by exposing only the necessary parts.
+Encapsulation is about bundling the data (variables) and methods (functions) that operate on the data into a single unit, and restricting access to some of the object's components.
+Top 10 Questions and Answers on Abstract Class vs. Interface in C#
+### 1. What is abstraction in OOP?
+Abstraction is the concept of hiding the complex implementation details and showing only the necessary features of an object. It focuses on what an object does rather than how it does it.
+```
+public abstract class Animal
+{
+    public abstract void MakeSound(); // Abstract method
+}
+
+public class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Bark");
+    }
+}
+
+// Usage
+Animal myDog = new Dog();
+myDog.MakeSound(); // Output: Bark
+```
+### 2. What is encapsulation in OOP?
+Encapsulation is the technique of bundling the data and methods that operate on the data into a single unit, typically a class, and restricting access to some of the object's components. This is usually done using access modifiers like private, protected, and public.
+```
+public class Account
+{
+    private double balance;
+
+    public void Deposit(double amount)
+    {
+        if (amount > 0)
+        {
+            balance += amount;
+        }
+    }
+
+    public void Withdraw(double amount)
+    {
+        if (amount > 0 && amount <= balance)
+        {
+            balance -= amount;
+        }
+    }
+
+    public double GetBalance()
+    {
+        return balance;
+    }
+}
+
+// Usage
+Account myAccount = new Account();
+myAccount.Deposit(100);
+myAccount.Withdraw(50);
+Console.WriteLine(myAccount.GetBalance()); // Output: 50
+```
+### 3. How do abstraction and encapsulation differ?
+Abstraction: Hides the complexity of the system by exposing only the necessary parts. It focuses on the "what" of an object.
+Encapsulation: Bundles the data and methods into a single unit and restricts access to some components. It focuses on the "how" of an object.
+4. Can you provide a real-world example of abstraction?
+A car dashboard is an example of abstraction. The driver interacts with the steering wheel, pedals, and buttons without needing to understand the complex mechanisms of the engine and other systems.
+
+### 5. Can you provide a real-world example of encapsulation?
+A capsule in medicine is an example of encapsulation. It encapsulates the drug inside, protecting it from the environment and controlling its release to the body.
+
+### 6. How does abstraction improve software design?
+Abstraction improves software design by simplifying complex systems, making them easier to understand and use. It allows developers to focus on high-level functionality without worrying about low-level implementation details.
+
+### 7. How does encapsulation improve software design?
+Encapsulation improves software design by protecting data integrity and hiding the internal state of objects. It promotes modularity and reduces the risk of unintended interactions between different parts of a program.
+
+### 8. What are the access modifiers used for encapsulation in C#?
+public: Accessible from any other code.
+private: Accessible only within the same class.
+protected: Accessible within the same class and derived classes.
+internal: Accessible within the same assembly.
+protected internal: Accessible within the same assembly and derived classes.
+### 9. How can abstraction be achieved in C#?
+Abstraction can be achieved in C# using abstract classes and interfaces. Abstract classes can have abstract methods (without implementation) and concrete methods (with implementation). Interfaces can only have method declarations.
+```
+public abstract class Shape
+{
+    public abstract double CalculateArea(); // Abstract method
+}
+
+public class Circle : Shape
+{
+    public double Radius { get; set; }
+
+    public override double CalculateArea()
+    {
+        return Math.PI * Radius * Radius;
+    }
+}
+```
+### 10. How can encapsulation be achieved in C#?
+Encapsulation is achieved by using access modifiers to restrict access to the class members. Private fields can be accessed and modified only through public methods, known as getters and setters.
+```
+public class Person
+{
+    private string name;
+
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+```
+### Conclusion
+Abstraction and encapsulation are key principles in object-oriented programming that help manage complexity and promote cleaner, more maintainable code. 
+
+Abstraction focuses on hiding the implementation details and exposing only the necessary parts of an object, while encapsulation bundles data and methods together, 
+
+restricting access to protect the object's integrity. Understanding and applying these concepts effectively is essential for creating robust and scalable software.
