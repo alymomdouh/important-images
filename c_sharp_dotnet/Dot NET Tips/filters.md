@@ -24,3 +24,5 @@ They are used to handle and log exceptions.
 API Key authorization is a common method to authenticate API requests by including a unique API key in the request headers. 
 
 An Authorization Filter can be employed to check the presence and validity of the API key before allowing access to the API.
+
+![image](https://github.com/user-attachments/assets/68e0c2e6-1dbb-4ad3-a906-e93480001efc)
