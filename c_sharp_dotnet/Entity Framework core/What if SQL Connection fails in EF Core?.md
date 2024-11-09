@@ -15,6 +15,7 @@ Although this may not be a noticeable issue in apps with low usage, it can occas
 To overcome this issue, it would be best for you to try the database query again after waiting for a short duration.
 
 1-EF Core has a built-in solution for that: 𝐄𝐧𝐚𝐛𝐥𝐞𝐑𝐞𝐭𝐫𝐲𝐎𝐧𝐅𝐚𝐢𝐥𝐮𝐫𝐞().
+
 2-I used to use Polly until they release that feature for EF Core. Polly is still valid for SQL text
 
 We can configure exactly how the 'EnableRetryOnFailure' option works (max retries, the delay between retries, etc), which enables resilient SQL connections.
