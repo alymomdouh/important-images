@@ -46,3 +46,6 @@ These indicate issues on the server’s side, often related to overloads or misc
 With the rise of microservices and distributed architectures, how have you adapted your error-handling strategies to manage 5xx server errors more efficiently?
 
 ![image](https://github.com/user-attachments/assets/c645a176-e7a1-478b-beb8-2a8d9987daab)
+
+
+![𝙃𝙏𝙏𝙋 𝙎𝙩𝙖𝙩𝙪𝙨 𝘾𝙤𝙙𝙚𝙨](<𝙃𝙏𝙏𝙋 𝙎𝙩𝙖𝙩𝙪𝙨 𝘾𝙤𝙙𝙚𝙨 .jpg>)
