@@ -20,3 +20,4 @@
  - Best used for Permanently removing a table and freeing up storage space.
 
    ![image](https://github.com/user-attachments/assets/f84262f3-0f83-4a0a-878a-1b9161acc7f1)
+SQL Interview Question_ Difference Between 𝐃𝐄𝐋𝐄𝐓𝐄_𝐓𝐑𝐔𝐍𝐂𝐀𝐓𝐄_𝐚𝐧𝐝_𝐃𝐑𝐎𝐏.md
