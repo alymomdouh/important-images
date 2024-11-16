@@ -101,8 +101,50 @@ Dive in to see how these new features can improve your ASP.NET Core applications
 🌟 Don't miss out on the latest .NET 9 insights! Hit follow for more updates and 🔁 repost to spread the knowledge!
 
 
+----------------------------------------------
+## .NET 9 is out today.
+
+Top updates across 8 key areas:
+
+𝗖# 𝟭𝟯 
+
+Params collections, enhanced lock types, and a new escape make coding smoother. Plus, implicit index access to simplify initialization.
+
+𝗔𝗦𝗣.𝗡𝗘𝗧 𝗖𝗼𝗿𝗲
+
+OpenAPI enhancements, faster asset delivery, PAR support, and the new HybridCache library boost performance and security.
+
+𝗘𝗙 𝗖𝗼𝗿𝗲
+
+Improved Cosmos DB support, pre-compiled AOT queries, better LINQ, and streamlined migrations make data handling faster.
+
+.𝗥𝘂𝗻𝘁𝗶𝗺𝗲
+
+Feature switches, control-flow enforcement, and dynamic adaptation improve performance across different app sizes.
+
+.𝗟𝗶𝗯𝗿𝗮𝗿𝗶𝗲𝘀
+
+Base64Url, new TimeSpan overloads, new collections, and cryptography upgrades add flexibility and security.
 
 
+.𝗦𝗗𝗞
+
+Run tests in parallel, new terminal logger by default, a workload sets feature, and more analyzers for better productivity.
+
+.𝗡𝗘𝗧 𝗔𝘀𝗽𝗶𝗿𝗲
+
+New MSBuild SDK, an improved dashboard, telemetry updates, support to wait for dependencies, and lots more.
+
+.𝗡𝗘𝗧 𝗠𝗔𝗨𝗜
+
+Opt into Native AOT deployment, embedding APIs, full trimming, and new controls for smaller, faster mobile apps.
+
+Are you upgrading to .NET 9?
+
+Grab my free .NET Backend Developer roadmap 👇
+https://lnkd.in/gmb6rQUR
+
+![image](https://github.com/user-attachments/assets/02046f31-6054-4590-bdb7-98e790928c9e)
 
 
 
