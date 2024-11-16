@@ -1,8 +1,10 @@
+
 ### How can you generate API tests using AI?
 
 Imagine if it were this simple:
 
 • Send an API request request
+
 • The AI takes care of the rest
 
 It turns out you can do this from your favorite API client.
@@ -20,6 +22,11 @@ Your test cases will execute the next time you send an API request.
 
 You can check if some test has failed. This could mean you have a bug or a regression.
 
+
 Ready to learn more about API testing?
 
-Here's an excellent resource: https://lnkd.in/ec2a8_H3
+Here's an excellent resource: 
+
+https://lnkd.in/ec2a8_H3
+
+![image](https://github.com/user-attachments/assets/9b02ffbd-08d7-4be3-9263-c068686bca47)
