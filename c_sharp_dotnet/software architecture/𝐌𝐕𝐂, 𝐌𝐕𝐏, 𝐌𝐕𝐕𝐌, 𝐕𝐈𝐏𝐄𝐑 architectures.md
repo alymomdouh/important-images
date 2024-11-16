@@ -1,5 +1,5 @@
 
- 𝐌𝐕𝐂, 𝐌𝐕𝐏, 𝐌𝐕𝐕𝐌, 𝐕𝐈𝐏𝐄𝐑 
+###  𝐌𝐕𝐂, 𝐌𝐕𝐏, 𝐌𝐕𝐕𝐌, 𝐕𝐈𝐏𝐄𝐑 
 
 ✅ 𝐀𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐚𝐥 𝐝𝐞𝐬𝐢𝐠𝐧 𝐩𝐚𝐭𝐭𝐞𝐫𝐧𝐬 used to separate concerns in software applications, particularly in UI development. They help in organizing code to make it more maintainable, testable, and scalable.
 
@@ -39,4 +39,6 @@
 
 𝐑𝐨𝐮𝐭𝐞𝐫: Manages navigation and routing in the application.
 
-![image](https://media.licdn.com/dms/image/v2/D4D22AQEyAsZAVcWeFQ/feedshare-shrink_800/feedshare-shrink_800/0/1730485507077?e=1734566400&v=beta&t=Uw7c9rKttJWmzBt2YUUX2FV6Sqmic8IxI21NrMAvl_w)
+![image](https://github.com/user-attachments/assets/762a6bb7-355b-4079-b02b-47645f5965ca)
+
+ 
