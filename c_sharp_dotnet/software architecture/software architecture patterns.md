@@ -76,3 +76,26 @@ Grab my free Clean Architecture template here: https://bit.ly/4fxT73m
 ![image](https://github.com/user-attachments/assets/801db260-7156-4a15-a251-f3856eaa8fc9)
 
 --------------------
+
+## Kafka has become a backbone for data streaming at companies like Uber,
+empowering real-time analytics and smooth data flow across their tech ecosystem. Here’s a breakdown of how Uber leverages Kafka for mission-critical operations:
+
+🔹 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀: 
+Uber uses MySQL and Cassandra as core databases to handle massive volumes of data with high availability and scalability.
+
+🔹 𝗣𝗿𝗼𝗱𝘂𝗰𝗲𝗿𝘀: 
+Kafka ingests data from various sources, such as:
+- Rider and Driver apps
+- API/Services layer
+- Dispatch systems
+- Mapping and logistics 
+
+🔹 𝗗𝗮𝘁𝗮 𝗣𝗶𝗽𝗲𝗹𝗶𝗻𝗲𝘀: 
+With Kafka, Uber handles both 𝗯𝗮𝘁𝗰𝗵 and 𝗿𝗲𝗮𝗹-𝘁𝗶𝗺𝗲 𝗽𝗶𝗽𝗲𝗹𝗶𝗻𝗲𝘀:
+- Batch Pipeline: Integrated with Hadoop, enabling 𝗔𝗻𝗮𝗹𝘆𝘁𝗶𝗰𝘀 𝗥𝗲𝗽𝗼𝗿𝘁𝗶𝗻𝗴, 𝗔𝗱-𝗵𝗼𝗰 𝗘𝘅𝗽𝗹𝗼𝗿𝗮𝘁𝗶𝗼𝗻, and 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲.
+- Real-Time Pipeline: Powered by tools like 𝗘𝗟𝗞 for debugging, 𝗙𝗹𝗶𝗻𝗸 for real-time analytics, and 𝗣𝘂𝗯/𝗦𝘂𝗯 for alerts, dashboards, and mobile app integration.
+
+Whether you’re in tech or just fascinated by the backend of apps you use every day, 
+this architecture demonstrates how complex systems handle real-time data with precision and speed!
+
+![image](https://github.com/user-attachments/assets/9476a542-867e-440d-bc60-0a1ba812353b)
