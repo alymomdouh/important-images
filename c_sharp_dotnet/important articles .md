@@ -14,3 +14,7 @@
 ## [Top 10 Questions and Answers on async and await](https://dotnet-fullstack-dev.blogspot.com/2024/07/top-10-questions-and-answers-on-async.html)
 
 ## [Top 10 Questions and Answers on Dependency Injection](https://dotnet-fullstack-dev.blogspot.com/2024/07/blog-post_18.html)
+
+## [How to Create Nuget Package in Visual Studio 2022](https://medium.com/@serkutyildirim/how-to-create-nuget-package-in-visual-studio-2022-fa7f734da854)
+
+
