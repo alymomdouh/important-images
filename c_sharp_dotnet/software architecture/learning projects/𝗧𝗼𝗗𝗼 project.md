@@ -36,7 +36,7 @@
 👉 Discover all these features and more in the 𝗧𝗼𝗗𝗼 project repository on 𝙂𝙞𝙩𝙃𝙪𝙗.
 
 You’re welcome to 𝙚𝙭𝙥𝙡𝙤𝙧𝙚, 𝙛𝙤𝙧𝙠, 𝙖𝙣𝙙 𝙘𝙤𝙣𝙩𝙧𝙞𝙗𝙪𝙩𝙚!
-https://lnkd.in/gEG8ks6S
+ [here](https://github.com/poorna-soysa/todo-app)
 
 🤝 I’m eager to receive feedback and connect with others exploring .𝙉𝙀𝙏 8, 𝙑𝙚𝙧𝙩𝙞𝙘𝙖𝙡 𝙎𝙡𝙞𝙘𝙚 𝘼𝙧𝙘𝙝𝙞𝙩𝙚𝙘𝙩𝙪𝙧𝙚, or 𝘾𝙌𝙍𝙎. Let’s 𝙘𝙤𝙡𝙡𝙖𝙗𝙤𝙧𝙖𝙩𝙚, 𝙨𝙝𝙖𝙧𝙚 𝙞𝙣𝙨𝙞𝙜𝙝𝙩𝙨, and 𝙘𝙤𝙣𝙩𝙧𝙞𝙗𝙪𝙩𝙚 together!
 
