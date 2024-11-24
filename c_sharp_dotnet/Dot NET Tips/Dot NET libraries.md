@@ -63,6 +63,8 @@ Repost this to spread the knowledge with your network ♻
 
 --------------------------
 ##  𝟏𝟓 𝐌𝐮𝐬𝐭-𝐇𝐚𝐯𝐞 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬 𝐟𝐨𝐫 𝐄𝐯𝐞𝐫𝐲 .𝐍𝐄𝐓 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫
+![image](https://github.com/user-attachments/assets/9a743dc3-0fb5-4e47-86b8-2756c1b959b7)
+
 
 You don't need to reinvent the wheel. 👇 
 
