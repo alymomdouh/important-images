@@ -25,6 +25,30 @@ such as between the business logic layer and the presentation layer.
 
 🎯 𝗥𝗲𝗰𝗼𝗿𝗱𝘀 𝐚𝐫𝐞 𝐛𝐞𝐬𝐭 𝐬𝐮𝐢𝐭𝐞𝐝 𝐟𝐨𝐫 𝐬𝐢𝐦𝐩𝐥𝐞 𝐝𝐚𝐭𝐚 𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞𝐬, and they are not meant to replace classes for all scenarios. 
 
+
 𝐅𝐨𝐫 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐩𝐥𝐞𝐱 𝐭𝐲𝐩𝐞𝐬 with behavior, you may still want to 𝐮𝐬𝐞 𝐫𝐞𝐠𝐮𝐥𝐚𝐫 𝐜𝐥𝐚𝐬𝐬𝐞𝐬 𝐨𝐫 𝐨𝐭𝐡𝐞𝐫 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐩𝐫𝐨𝐯𝐢𝐝𝐞𝐝 𝐛𝐲 𝐂# 𝐚𝐧𝐝 .𝐍𝐄𝐓.
+
+----------
+### 💥 𝐑𝐞𝐜𝐨𝐫𝐝𝐬 𝐟𝐨𝐫 𝐃𝐓𝐎𝐬
+ 
+ ✅ 𝐑𝐞𝐜𝐨𝐫𝐝 instead of 𝐜𝐥𝐚𝐬𝐬 for our 𝐃𝐚𝐭𝐚 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫 𝐎𝐛𝐣𝐞𝐜𝐭𝐬 (𝐃𝐓𝐎𝐬). 📊
+ 
+ 🎯 Why 𝐑𝐞𝐜𝐨𝐫𝐝𝐬?
+ 
+ ➡ 𝐈𝐦𝐦𝐮𝐭𝐚𝐛𝐥𝐞 by Default: 
+ 
+ Records are immutable by design, meaning once created, their state cannot be modified. This helps ensure data consistency and reduces the risk of unintentional bugs.
+ 
+ ➡ 𝐂𝐨𝐧𝐜𝐢𝐬𝐞𝐧𝐞𝐬𝐬: 
+ 
+ Records allow us to declare a class with a concise syntax. Getters, setters, and equality members are automatically generated, reducing boilerplate code and improving readability.
+ 
+ ➡ 𝐕𝐚𝐥𝐮𝐞 𝐒𝐞𝐦𝐚𝐧𝐭𝐢𝐜𝐬: With records, 
+ 
+ equality is based on the values of the properties, promoting a value semantics approach. This aligns perfectly with the purpose of DTOs, which often carry data without behavior.
+ 
+ ➡ 𝐏𝐚𝐭𝐭𝐞𝐫𝐧 𝐌𝐚𝐭𝐜𝐡𝐢𝐧𝐠: 
+ 
+ Leverage the power of pattern matching with records. This enhances our ability to work with DTOs in switch statements, making code more expressive and elegant.
 
 ![image](https://github.com/user-attachments/assets/d3fda099-c017-4557-ad0d-a88cf4ae8b53)
