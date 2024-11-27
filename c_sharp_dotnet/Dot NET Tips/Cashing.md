@@ -95,3 +95,6 @@
 ولو البوست مفيد متنساش تشيره لعل غيرك يستفيد.
 
 والسلام عليكم ورحمة الله وبركاته.👋
+
+
+[How to Implement Redis Cache in .NET Core Web API](https://www.voidgeeks.com/tutorial/How-to-Implement-Redis-Cache-in-NET-Core-Web-API/23)
