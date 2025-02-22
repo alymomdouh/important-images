@@ -13,3 +13,4 @@ Writing clean, maintainable .NET code is essential for building scalable and eff
 
 By following these best practices, developers can ensure cleaner, more efficient, and scalable .NET applications.
 
+![image](https://github.com/user-attachments/assets/13675ec3-28ec-49ac-9d52-f528ff297dc7)
