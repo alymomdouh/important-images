@@ -14,3 +14,10 @@ Writing clean, maintainable .NET code is essential for building scalable and eff
 By following these best practices, developers can ensure cleaner, more efficient, and scalable .NET applications.
 
 ![image](https://github.com/user-attachments/assets/13675ec3-28ec-49ac-9d52-f528ff297dc7)
+
+-----------------------
+# Programming Mistakes And How To Fix Them
+In my view, programming, alongside all its complexities, is an art form. As programmers, we often encounter various challenges, both minor and major, in this industry. Our craft as programmers is to solve these challenges. In this post, I have gathered 21 common mistakes that we may encounter during coding, and alongside each, I have proposed what I believe to be optimal and better solutions. <br/>
+ 
+<img src="https://raw.githubusercontent.com/kavaan/programming-mistakes-and-how-to-fix-them/main/mistakes6.png" /> <br/>
+ <br/>
