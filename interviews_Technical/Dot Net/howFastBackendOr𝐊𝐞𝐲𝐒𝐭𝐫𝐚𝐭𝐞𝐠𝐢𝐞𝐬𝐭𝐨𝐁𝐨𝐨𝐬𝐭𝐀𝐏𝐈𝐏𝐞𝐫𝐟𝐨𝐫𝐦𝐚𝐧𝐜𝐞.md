@@ -82,3 +82,15 @@ An API Gateway can help in routing requests, handling authentication, rate limit
 
 ###   9-𝐀𝐯𝐨𝐢𝐝 𝐎𝐯𝐞𝐫𝐟𝐞𝐭𝐜𝐡𝐢𝐧𝐠 𝐚𝐧𝐝 𝐔𝐧𝐝𝐞𝐫𝐟𝐞𝐭𝐜𝐡𝐢𝐧𝐠:
 Design your API endpoints to return just the right amount of data. GraphQL, for example, allows clients to request exactly what they need, avoiding overfetching and underfetching issues common in REST APIs.
+
+ 
+![image](https://media.licdn.com/dms/image/v2/D4E22AQGtr8Im4IGnZg/feedshare-shrink_800/B4EZUnW9mNHcAg-/0/1740122092947?e=1743033600&v=beta&t=Jkz1UZRkkLCqw6ef3-dA-IkadgM5PGcBRK-o3C1lZqk)
+
+
+
+
+
+
+
+     ![image](https://github.com/user-attachments/assets/7c7cde72-a0fa-4981-8390-ec3f6860a17c)
+
