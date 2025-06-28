@@ -98,3 +98,60 @@
 
 
 [How to Implement Redis Cache in .NET Core Web API](https://www.voidgeeks.com/tutorial/How-to-Implement-Redis-Cache-in-NET-Core-Web-API/23)
+
+-----------------------------------------------------------------------------------------------------
+## 💡 .𝗡𝗘𝗧 𝗧𝗶𝗽 - 𝗖𝗮𝗰𝗵𝗶𝗻𝗴 𝗦𝘁𝗿𝗮𝘁𝗲𝗴𝗶𝗲𝘀 𝗘𝘃𝗲𝗿𝘆 𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗦𝗵𝗼𝘂𝗹𝗱 𝗞𝗻𝗼𝘄
+
+🔥 Not all cache strategies are built the same. Some are designed for speed. Others make sure your data stays fresh and consistent.
+
+The important part? Choosing the right one based on how your system reads and writes data.
+
+Here are 5 caching strategies every backend developer should be familiar with: 
+
+## 1. Cache-Aside 
+
+This one’s simple: your app checks the cache first. If it’s not there, it grabs the data from the database and then adds it to the cache.
+
+It works well for read-heavy systems but comes with a trade-off, the first request hits the database and might be slower. Also, data can get stale unless you manage expiration carefully.
+
+✅ 𝗜𝗱𝗲𝗮𝗹 𝘄𝗵𝗲𝗻: systems that read the same data frequently.
+
+## 2. Read-Through
+
+Your app never talks to the database directly. Instead, the cache handles it. If the cache misses, it fetches from the DB behind the scenes and returns the result.
+
+This adds a nice layer of abstraction, but you’ll need more logic in your cache layer. And like Cache-Aside, there’s still a risk of stale data.
+
+✅ 𝗜𝗱𝗲𝗮𝗹 𝘄𝗵𝗲𝗻: apps with heavy read traffic where simplicity on the app side is a win.
+
+## 3. Write-Through
+
+Every write goes through the cache, and the cache pushes it to the database synchronously. It keeps things consistent, but at a cost.
+
+Your writes will be a bit slower, and your cache might grow quickly if you’re not careful.
+
+✅ 𝗜𝗱𝗲𝗮𝗹 𝘄𝗵𝗲𝗻: low-write systems where data freshness is critical.
+
+
+## 4. Write-Back (or Write-Behind)
+
+Here, your app writes data to the cache, and the cache pushes it to the database later, asynchronously.
+
+It’s fast and efficient, but risky. If the cache crashes before syncing, you could lose data.
+
+✅ 𝗜𝗱𝗲𝗮𝗹 𝘄𝗵𝗲𝗻: high-throughput, write-heavy workloads where performance matters more than immediate consistency.
+
+## 5. Write-Around
+
+Skip the cache on writes. Just go straight to the database. The cache only gets updated when that data is actually read.
+
+You avoid unnecessary cache bloat, but there’s a downside, the first read after a write will be slower.
+
+✅ 𝗜𝗱𝗲𝗮𝗹 𝘄𝗵𝗲𝗻: large datasets that change infrequently.
+
+✨ Don’t just add caching, choose the strategy that fits your workload. It can make or break your app’s performance, reliability, and cost.
+
+💬 What 𝗰𝗮𝗰𝗵𝗶𝗻𝗴 𝘀𝘁𝗿𝗮𝘁𝗲𝗴𝘆 are you using in your projects? Drop in the comments! 👇 
+
+
+![image](https://github.com/user-attachments/assets/ddd1a095-0324-4e18-914f-2244e76605d7)
